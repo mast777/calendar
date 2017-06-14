@@ -1,0 +1,52 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: url(../img/background.jpg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 888px;
+  margin: 0 auto;
+}
+.header {
+  background: linear-gradient(to top,#35243b,#342b47);
+  min-height: 96px;
+}
+.nav-buttoms {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 342px;
+}
+.nav-buttom {
+  display: block;
+  float: left;
+}
+.nav-buttom-link {
+  width: 114px;
+  height: 96px;
+  display: block;
+  background-image: url(../img/nav-sprite.png);
+  background-repeat: no-repeat;
+}
+.n-btm-hover:hover {
+  background: #2e2337;
+}
+.messeg { background-position: 34px 20px; }
+.calendar { background-position: -62px 18px; }
+.volume { background-position: -154px 20px; }
+
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
