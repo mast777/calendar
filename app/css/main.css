@@ -1,3 +1,4 @@
+@import "fonts.css";
 html {
   width: 100%;
   height: 100%;
@@ -40,6 +41,90 @@ body {
 .calendar { background-position: -62px 18px; }
 .volume { background-position: -154px 20px; }
 
+
+.body-calendar {
+  background: #fff;
+  margin-top: 30px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.top-calendar {
+  background: #352842;
+  border-bottom: 2px solid #3b324c;
+}
+.link-arrow {
+  height: 116px;
+  display: block;
+  background-image: url(../img/arrow-sprite.png);
+  background-repeat: no-repeat;
+}
+.arrow-left {
+  background-position: 34px 55%;
+}
+.arrow-right {
+  background-position: -114px 55%;
+}
+.top-cal-left, .top-cal-right {
+  width: 14%;
+  float: left;
+  height: 116px;
+}
+.top-cal-center {
+  text-align: center;
+  width: 72%;
+  font: 32px/116px Tahoma, serif;
+  color: #55496e;
+  float: left;
+}
+
+
+
+.center-calendar {
+  min-height: 300px;
+  background: #342a46;
+}
+.calendar-days {
+  list-style: none;
+  margin: 0;
+  padding: 35px;
+  box-sizing: border-box;
+}
+.calendar-day {
+  float: left;
+  margin: 18px;
+}
+.day-link {
+  border-radius: 50%;
+  background: #3d344f;
+  display: block;
+  width: 80px;
+  height: 80px;
+  font-family: "HelveticNuel", serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 80px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+.day-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 3px rgba(0,0,0,.5);
+}
+.day-this-month {
+  background: #3d344f;
+}
+.other-month {
+  border: 4px solid #55496e;
+  box-sizing: border-box;
+  color: #55496e;
+  background: transparent;
+  line-height: 72px;
+}
+.day-today {
+  background-color: #621ba9;
+}
 
 .clearfix:before,
 .clearfix:after {
