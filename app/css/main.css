@@ -34,7 +34,7 @@ body {
   background-image: url(../img/nav-sprite.png);
   background-repeat: no-repeat;
 }
-.n-btm-hover:hover {
+.n-btm-active {
   background: #2e2337;
 }
 .messeg { background-position: 34px 20px; }
@@ -45,6 +45,7 @@ body {
 .body-calendar {
   background: #fff;
   margin-top: 30px;
+  margin-bottom: 30px;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -86,7 +87,7 @@ body {
 .calendar-days {
   list-style: none;
   margin: 0;
-  padding: 35px;
+  padding:20px 35px;
   box-sizing: border-box;
 }
 .calendar-day {
@@ -124,6 +125,58 @@ body {
 }
 .day-today {
   background-color: #621ba9;
+}
+
+
+.bottom-calendar {
+  border-top: 2px solid #3b324c;
+  background: linear-gradient(to top,#35243b,#342b47);
+}
+.bottom-cal-left, .bottom-cal-right {
+  height: 116px;
+  width: 20%;
+  float: left;
+}
+.bottom-cal-center {
+  height: 116px;
+  text-align: center;
+  width: 60%;
+  color: #55496e;
+  float: left;
+}
+.link-bottom {
+  width: 52px;
+  height: 52px;
+  display: block;
+  background-image: url(../img/bottom-sprite.png);
+  background-repeat: no-repeat;
+  margin:32px auto;
+}
+.bell-button {
+  position: relative;
+  background-position: 0 center;
+}
+.edit-button {
+  background-position: -134px center;
+}
+.settings-button {
+  background-position: -260px center;
+}
+.notifications {
+  position: absolute;
+  top:-10px;
+  right: -30px;
+  background: #621ba9;
+  color: #fff;
+  font-family:"HelveticNuel", serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  display: block;
+  width: 16px;
+  height: 16px;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .clearfix:before,
