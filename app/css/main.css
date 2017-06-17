@@ -9,6 +9,10 @@ body {
   width: 100%;
   height: 100%;
 }
+a {
+  text-decoration: none;
+  color: #fff;
+}
 .container {
   width: 888px;
   margin: 0 auto;
@@ -24,22 +28,40 @@ body {
   width: 342px;
 }
 .nav-buttom {
-  display: block;
-  float: left;
-}
-.nav-buttom-link {
   width: 114px;
   height: 96px;
   display: block;
+  float: left;
+  position: relative;
+}
+.nav-buttom-link {
+  width: 58px;
+  height: 52px;
+  display: block;
   background-image: url(../img/nav-sprite.png);
   background-repeat: no-repeat;
+  margin: 22px auto;
+  position: relative;
 }
 .n-btm-active {
   background: #2e2337;
 }
-.messeg { background-position: 34px 20px; }
-.calendar { background-position: -62px 18px; }
-.volume { background-position: -154px 20px; }
+.messeg { background-position: 5px center; }
+.calendar { background-position: -90px center; }
+.volume { background-position: -182px center; }
+
+.messeg-new {
+  font-family: "HelveticNuel", serif;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 10px;
+  background: #e63558;
+  border-radius: 50%;
+  position: absolute;
+  top:-7px;
+  right: -14px;
+}
 
 
 .body-calendar {
@@ -48,6 +70,16 @@ body {
   margin-bottom: 30px;
   border-radius: 30px;
   overflow: hidden;
+}
+.header-triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 28px solid #352943;
+  border-left: 28px solid transparent;
+  border-right: 28px solid transparent;
+  position: absolute;
+  right: 28px;
+  bottom: -31px;
 }
 .top-calendar {
   background: #352842;
